@@ -1,0 +1,8 @@
+enum Gender {
+    MALE
+    FEMALE
+}
+
+type Query {
+    negate(gender: Gender!): Gender!
+}
