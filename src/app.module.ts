@@ -7,11 +7,7 @@ import { GenderResolver } from './gender.resolver';
 @Module({
   imports: [
     GraphQLModule.forRoot({
-      typePaths: ['./**/*.graphql'],
-      definitions: {
-        path: 'src/graphql.ts',
-        outputAs: 'class',
-      },
+      typePaths: ['./**/*.graphql']
     }),
   ],
   controllers: [AppController],
